@@ -32,3 +32,6 @@ git add agents/... avatars/... scripts/... memory/... README.md
 git commit -m "Update agent identities"
 ```
 Push this repo to your private remote so other machines can clone it and re-link as needed.
+
+## Local CI
+Run `npm run ci` to mirror the GitHub lint/avatar checks before pushing.
