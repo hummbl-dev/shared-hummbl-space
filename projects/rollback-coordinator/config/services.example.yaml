@@ -1,0 +1,18 @@
+services:
+  api:
+    depends_on: [db]
+    rollback_script: scripts/api-rollback.sh
+    approvals: [guardian]
+    environment: [prod, staging]
+  worker:
+    depends_on: [api]
+    rollback_script: scripts/worker-rollback.sh
+  automations:
+    depends_on: [api]
+    rollback_script: scripts/automations-rollback.sh
+  db:
+    rollback_script: scripts/db-rollback.sh
+    migrations:
+      tool: prisma
+      state_command: scripts/check-db-state.sh
+      lock_file: prisma/migrations_lock.toml

@@ -1,0 +1,35 @@
+# Schema for rollback coordinator service definitions
+services:
+  type: map
+  required: true
+  values:
+    type: map
+    mapping:
+      depends_on:
+        type: seq
+        required: false
+        sequence:
+          - type: str
+      rollback_script:
+        type: str
+        required: true
+      approvals:
+        type: seq
+        required: false
+        sequence:
+          - type: str
+      environment:
+        type: seq
+        required: false
+        sequence:
+          - type: str
+      migrations:
+        type: map
+        required: false
+        mapping:
+          tool:
+            type: str
+          state_command:
+            type: str
+          lock_file:
+            type: str
