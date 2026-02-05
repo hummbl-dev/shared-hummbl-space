@@ -8,21 +8,21 @@ jobs:
   lint_agents:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Run agent lint
         run: ./scripts/lint_agents.py
 
   check_avatars:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Run avatar validation
         run: ./scripts/check_avatars.py
 
   workspace_sanity:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Link shared workspace locally
         run: |
           chmod +x scripts/link-shared-workspace.sh
