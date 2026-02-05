@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
-# Syncs active projects from Mac to Pixel for local auditing
-PROJECT_ID=$1
-PROJECT_PATH=$(python3 -c "import json, sys; data = json.load(open('_state/inventory/projects.json')); print(next((p['path'] for p in data['projects'] if p['id'] == '$PROJECT_ID'), ''))")
+#!/bin/bash
+set -euo pipefail
 
-if [[ -z "$PROJECT_PATH" ]]; then
-    echo "Error: Project ID '$PROJECT_ID' not found."; exit 1
+STATE_DIR="$(cd "$(dirname "$0")/.." && pwd)/_state"
+mkdir -p "$STATE_DIR"
+
+if [ -z "${HUMMBL_SYNC_TARGET:-}" ]; then
+  echo "HUMMBL_SYNC_TARGET not set. Aborting sync." >&2
+  exit 1
 fi
 
-echo "Syncing $PROJECT_ID to Pixel..."
-ssh pixel-ai "mkdir -p ~/projects/$PROJECT_ID"
-rsync -avz -e "ssh -p 8022" --exclude '.git' --exclude 'node_modules' "$PROJECT_PATH/" "pixel-ai:~/projects/$PROJECT_ID/"
+echo "[TBD] Would sync shared workspace to $HUMMBL_SYNC_TARGET (dry run)."
