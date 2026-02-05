@@ -1,14 +1,20 @@
-# Repository Classification
+# Classification
 
-**Repository:** shared-hummbl-space  
-**Owner:** hummbl-dev  
-**Classification:** EXPERIMENTAL  
-**Authority:** Self-managed (experimental development)
+classification: EXPERIMENTAL
+authority: Self-managed (experimental development)
+
+## Repository Details
+- **Name:** shared-hummbl-space  
+- **Owner:** hummbl-dev
 
 ## Purpose
 Shared collaborative space for experimental HUMMBL development and prototyping.
 
 ## Governance Rules
+- Canonical defines truth; operational executes; experimental explores; forks track upstream.
+- No copying canonical artifacts into non-canonical repos. Reference/import only.
+
+## Purpose
 - Experimental classification allows rapid iteration
 - No production dependencies should reference this repo
 - Breaking changes permitted without notice
