@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Lint agent directories for required files and AGENT.md path references."""
+import argparse
 import pathlib
 import re
 from typing import List
@@ -7,8 +8,19 @@ from typing import List
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 AGENTS_DIR = ROOT / "agents"
 REQUIRED = ["IDENTITY.md", "USER.md", "SOUL.md", "AGENT.md", "MEMORY.md"]
-BIRTH_LOG = pathlib.Path("memory/2026-02-05.md")
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--date", help="Override birth log date (YYYY-MM-DD)")
+args = parser.parse_args()
+
+if args.date:
+    birth_log_name = f"memory/{args.date}.md"
+else:
+    memory_dir = ROOT / "memory"
+    candidates = sorted(memory_dir.glob("20*-*-*.md"))
+    birth_log_name = pathlib.Path("memory") / candidates[-1].name if candidates else pathlib.Path("memory/2026-02-05.md")
+
+BIRTH_LOG = pathlib.Path(birth_log_name)
 pattern = re.compile(r"agents/(?P<name>[\w\-]+)/(?P<folder>[\w\-]+)/")
 
 issues: List[str] = []
