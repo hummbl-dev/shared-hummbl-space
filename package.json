@@ -5,5 +5,9 @@
     "lint:agents": "./scripts/lint_agents.py",
     "lint:avatars": "./scripts/check_avatars.py",
     "ci": "npm run lint:agents && npm run lint:avatars"
+  },
+  "devDependencies": {
+    "cspell": "^9.6.4",
+    "markdownlint-cli": "^0.47.0"
   }
 }
