@@ -259,7 +259,7 @@ When adding scripts:
 2. Include docstring/header comment with usage
 3. Use `set -euo pipefail` for bash scripts
 4. Handle errors gracefully
-5. Document in `TOOLS.md` (when created)
+5. Document in `TOOLS.md`
 
 ---
 
