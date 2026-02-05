@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#12263c" />
+      <stop offset="100%" stop-color="#0c1a2a" />
+    </radialGradient>
+    <linearGradient id="needle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b7c2d4" />
+      <stop offset="60%" stop-color="#dce2eb" />
+    </linearGradient>
+    <linearGradient id="tip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffad6d" />
+      <stop offset="100%" stop-color="#ff8a3c" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g stroke="#56e0ff" stroke-width="1" stroke-opacity="0.25">
+    <line x1="0" y1="64" x2="512" y2="64" />
+    <line x1="0" y1="128" x2="512" y2="128" />
+    <line x1="0" y1="192" x2="512" y2="192" />
+    <line x1="0" y1="256" x2="512" y2="256" />
+    <line x1="0" y1="320" x2="512" y2="320" />
+    <line x1="0" y1="384" x2="512" y2="384" />
+    <line x1="0" y1="448" x2="512" y2="448" />
+    <line x1="64" y1="0" x2="64" y2="512" />
+    <line x1="128" y1="0" x2="128" y2="512" />
+    <line x1="192" y1="0" x2="192" y2="512" />
+    <line x1="256" y1="0" x2="256" y2="512" />
+    <line x1="320" y1="0" x2="320" y2="512" />
+    <line x1="384" y1="0" x2="384" y2="512" />
+    <line x1="448" y1="0" x2="448" y2="512" />
+  </g>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="4" />
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#56e0ff" stroke-opacity="0.9" stroke-width="3" />
+  <g transform="rotate(-18 256 256)">
+    <rect x="250" y="110" width="12" height="180" fill="url(#needle)" rx="6"/>
+    <rect x="250" y="200" width="12" height="170" fill="#b0bdcf" rx="6"/>
+    <polygon points="256,110 280,80 232,80" fill="#b0bdcf" />
+    <polygon points="256,80 276,60 236,60" fill="url(#tip)" />
+  </g>
+  <g transform="rotate(162 256 256)">
+    <path d="M256 230 L300 330 L212 330 Z" fill="#0c1a2a" stroke="#1b324f" stroke-width="4" />
+  </g>
+  <circle cx="256" cy="256" r="10" fill="#f8f9fb" />
+  <circle cx="320" cy="210" r="6" fill="#f8f9fb" opacity="0.8" />
+</svg>
