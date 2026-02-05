@@ -44,7 +44,8 @@ Before logging "approved" in the gallery, walk through these five checks (note r
 5. **Approval metadata** — date + approving human added to `avatars/GALLERY.md` and `IDENTITY.md`.
 
 ### Script Usage
-```
+
+```bash
 scripts/generate-avatar.sh --output avatars/<name>-avatar.png --mode color
 scripts/generate-avatar.sh --output avatars/<name>-avatar-mono.png --mode mono
 ```

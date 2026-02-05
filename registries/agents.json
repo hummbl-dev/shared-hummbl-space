@@ -1,0 +1,559 @@
+{
+  "generated": "2026-02-05",
+  "agents": [
+    {
+      "callsign": "anchor",
+      "name": "Anchor",
+      "emoji": "🪝",
+      "summary": "Maintains fallback/rollback docs for each mission.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/anchor",
+      "artifacts": [
+        "agents/anchor/stability"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "antithesis",
+      "name": "Antithesis",
+      "emoji": "⚔️",
+      "summary": "I interrogate weaknesses so synthesis can emerge stronger.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/antithesis",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "atlas",
+      "name": "Atlas",
+      "emoji": "🧠",
+      "summary": "I stitch disparate workstreams into cohesive strategies.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/atlas",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "axis",
+      "name": "Axis",
+      "emoji": "🧭",
+      "summary": "Keeps priority matrix current and cites SITREPs for every alignment call.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/axis",
+      "artifacts": [
+        "agents/axis/priorities"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "beacon",
+      "name": "Beacon",
+      "emoji": "🚨",
+      "summary": "Escalate with evidence; default to quiet unless severity >= WARN.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/beacon",
+      "artifacts": [
+        "agents/beacon/alerts"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "bluewall",
+      "name": "Bluewall",
+      "emoji": "🔵",
+      "summary": "I absorb Redline’s findings and harden the stack.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/bluewall",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "chronos",
+      "name": "Chronos",
+      "emoji": "⏱",
+      "summary": "I keep every mission on schedule.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/chronos",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "circuit",
+      "name": "Circuit",
+      "emoji": "🛠",
+      "summary": "I build and refactor per the plan.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/circuit",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "dialectic",
+      "name": "Dialectic Team",
+      "emoji": "🧩",
+      "summary": "Purpose: Coordinates thesis→antithesis→synthesis debates.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/dialectic",
+      "artifacts": [],
+      "type": "team"
+    },
+    {
+      "callsign": "echo",
+      "name": "Echo",
+      "emoji": "🔁",
+      "summary": "I mirror critical context so nothing slips between agents.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/echo",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "ember",
+      "name": "Ember",
+      "emoji": "🔥",
+      "summary": "Never optimize blindly; metrics first.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/ember",
+      "artifacts": [
+        "agents/ember/perf"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "flux",
+      "name": "Flux",
+      "emoji": "♻️",
+      "summary": "I keep HUMMBL’s automation flowing.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/flux",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "forge",
+      "name": "Forge",
+      "emoji": "🔧",
+      "summary": "I turn plans into working artifacts.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/forge",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "forgefire",
+      "name": "Forgefire",
+      "emoji": "🛠️",
+      "summary": "Demands rehearsal plans before touching prod.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/forgefire",
+      "artifacts": [
+        "agents/forgefire/migrations"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "glyph",
+      "name": "Glyph",
+      "emoji": "🎨",
+      "summary": "Keeps style guides + experience requirements aligned with engineering realities.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/glyph",
+      "artifacts": [
+        "agents/glyph/briefs"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "guardian",
+      "name": "Guardian",
+      "emoji": "🛡️",
+      "summary": "Validate policies before execution; log approvals.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/guardian",
+      "artifacts": [
+        "agents/guardian/guards"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "halo",
+      "name": "Halo",
+      "emoji": "🌌",
+      "summary": "Outline risks/opportunities with citations before handing to planners.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/halo",
+      "artifacts": [
+        "agents/halo/visions"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "harbor",
+      "name": "Harbor",
+      "emoji": "⚓",
+      "summary": "Coordinates with Guardian + Sentinel equivalents before pushing.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/harbor",
+      "artifacts": [
+        "agents/harbor/releases"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "hexaops",
+      "name": "Hexaops Team",
+      "emoji": "🧩",
+      "summary": "Purpose: Research→plan→build→QA→schedule→brief team.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/hexaops",
+      "artifacts": [],
+      "type": "team"
+    },
+    {
+      "callsign": "kernel",
+      "name": "Kernel",
+      "emoji": "🧬",
+      "summary": "Demands reproducible builds + tests before handing to Harbor.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/kernel",
+      "artifacts": [
+        "agents/kernel/builds"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "loom",
+      "name": "Loom",
+      "emoji": "🪵",
+      "summary": "Promote insights from daily logs into long-term memory.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/loom",
+      "artifacts": [
+        "agents/loom/archives"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "matrix",
+      "name": "Matrix",
+      "emoji": "🧮",
+      "summary": "Prefer charts/tables with references to raw data.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/matrix",
+      "artifacts": [
+        "agents/matrix/analyses"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "nexus",
+      "name": "Nexus",
+      "emoji": "🔗",
+      "summary": "I ensure everyone shares the same understanding.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/nexus",
+      "artifacts": [
+        "agents/nexus/briefings"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "octave",
+      "name": "Octave Team",
+      "emoji": "🧩",
+      "summary": "Purpose: Risk, experience, core, integration, performance, release, liaison, archive team.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/octave",
+      "artifacts": [],
+      "type": "team"
+    },
+    {
+      "callsign": "orbit",
+      "name": "Orbit",
+      "emoji": "🛰️",
+      "summary": "Documents dependencies + integration tests for Guardian + Harbor.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/orbit",
+      "artifacts": [
+        "agents/orbit/integrations"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "pentad",
+      "name": "Pentad Team",
+      "emoji": "🧩",
+      "summary": "Purpose: Strategic/build/monitor/analytics/automation collective.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/pentad",
+      "artifacts": [],
+      "type": "team"
+    },
+    {
+      "callsign": "prism",
+      "name": "Prism",
+      "emoji": "🧪",
+      "summary": "I explore new domains and bring back clean datasets for the others.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/prism",
+      "artifacts": [
+        "agents/prism/research"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "pulse",
+      "name": "Pulse",
+      "emoji": "⚡",
+      "summary": "I keep a finger on the heartbeat of HUMMBL’s runtime signals.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/pulse",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "pulsewave",
+      "name": "Pulsewave",
+      "emoji": "📡",
+      "summary": "Escalates only when impact > INFO, with data references.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/pulsewave",
+      "artifacts": [
+        "agents/pulsewave/signals"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "purplebridge",
+      "name": "Purplebridge",
+      "emoji": "🟣",
+      "summary": "I ensure offense + defense stay aligned and documented.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/purplebridge",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "quill",
+      "name": "Quill",
+      "emoji": "✒️",
+      "summary": "Keep docs current; cite every section with file paths.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/quill",
+      "artifacts": [
+        "agents/quill/docs"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "quorum",
+      "name": "Quorum",
+      "emoji": "📊",
+      "summary": "I translate observations into metrics.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/quorum",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "red-blue-purple",
+      "name": "Red-Blue-Purple Team",
+      "emoji": "🧩",
+      "summary": "Purpose: Offense (red), defense (blue), coordination (purple).",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/red-blue-purple",
+      "artifacts": [],
+      "type": "team"
+    },
+    {
+      "callsign": "redline",
+      "name": "Redline",
+      "emoji": "🔴",
+      "summary": "I simulate adversaries so Reuben sees issues before attackers do.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/redline",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "relay",
+      "name": "Relay",
+      "emoji": "🔗",
+      "summary": "Summaries must include references + asks.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/relay",
+      "artifacts": [
+        "agents/relay/briefings"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "relayor",
+      "name": "Relayor",
+      "emoji": "🔄",
+      "summary": "Every handoff has an owner + timestamp.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/relayor",
+      "artifacts": [
+        "agents/relayor/handoffs"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "scout",
+      "name": "Scout",
+      "emoji": "🛰",
+      "summary": "I track vectors, flag anomalies, and hand the right data to whoever needs it.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/scout",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "scribe",
+      "name": "Scribe",
+      "emoji": "📚",
+      "summary": "Maintains decision logs and ensures approvals are traceable.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/scribe",
+      "artifacts": [
+        "agents/scribe/decisions"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "sentinel",
+      "name": "Sentinel",
+      "emoji": "🛡",
+      "summary": "I guard the release gates.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/sentinel",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "septet",
+      "name": "Septet Team",
+      "emoji": "🧩",
+      "summary": "Purpose: Vision, documentation, data, security, cadence, comms, memory team.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/septet",
+      "artifacts": [],
+      "type": "team"
+    },
+    {
+      "callsign": "shield",
+      "name": "Shield",
+      "emoji": "🛡️",
+      "summary": "Coordinates with Guardian/Vault for approvals.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/shield",
+      "artifacts": [
+        "agents/shield/reviews"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "spark",
+      "name": "Spark",
+      "emoji": "⚡",
+      "summary": "Documents experiments, metrics, and go/no-go results.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/spark",
+      "artifacts": [
+        "agents/spark/experiments"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "synthesis",
+      "name": "Synthesis",
+      "emoji": "🔄",
+      "summary": "I turn debate into decisions.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/synthesis",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "tempo",
+      "name": "Tempo",
+      "emoji": "🎛️",
+      "summary": "Watch quiet hours + scheduling constraints.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/tempo",
+      "artifacts": [
+        "agents/tempo/cadence"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "tempofox",
+      "name": "Tempofox",
+      "emoji": "🦊",
+      "summary": "Maintains backlog triage + heartbeat adjustments.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/tempofox",
+      "artifacts": [
+        "agents/tempofox/cadence"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "thesis",
+      "name": "Thesis",
+      "emoji": "💡",
+      "summary": "I chart the first argument: structured, hopeful, and grounded in evidence.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/thesis",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "vault",
+      "name": "Vault",
+      "emoji": "🔒",
+      "summary": "Ensures sensitive notes stay in governed locations only.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/vault",
+      "artifacts": [
+        "agents/vault/archives"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "vector",
+      "name": "Vector",
+      "emoji": "📐",
+      "summary": "I transform research into executable plans.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/vector",
+      "artifacts": [
+        "agents/vector/plans"
+      ],
+      "type": "agent"
+    },
+    {
+      "callsign": "vigil",
+      "name": "Vigil",
+      "emoji": "👁️",
+      "summary": "I keep the streams in sight.",
+      "status": "unknown",
+      "home": "/Users/others/shared-hummbl-space/agents/vigil",
+      "artifacts": [],
+      "type": "agent"
+    },
+    {
+      "callsign": "whisper",
+      "name": "Whisper",
+      "emoji": "🗣️",
+      "summary": "Every update cites sources + owners.",
+      "status": "approved",
+      "home": "/Users/others/shared-hummbl-space/agents/whisper",
+      "artifacts": [
+        "agents/whisper/updates"
+      ],
+      "type": "agent"
+    }
+  ]
+}

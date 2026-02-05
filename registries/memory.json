@@ -1,0 +1,9 @@
+{
+  "generated": "2026-02-05",
+  "guidelines": {
+    "daily_logs": "Create memory/YYYY-MM-DD.md at start of each session; log approvals, blockers, results.",
+    "long_term": "Promote durable facts into MEMORY.md; reference PLAN.md and RUN_LOG for details.",
+    "run_log": "For Flow-mode work, append actions to workspace/multi-agent-coding-session/RUN_LOG.md.",
+    "lint": "scripts/lint_agents.py now auto-detects latest log or accepts --date flag."
+  }
+}

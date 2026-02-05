@@ -1,0 +1,23 @@
+{
+  "generated": "2026-02-05",
+  "workstreams": [
+    {
+      "name": "Rollback Coordinator",
+      "paths": [
+        "projects/rollback-coordinator/design/rollback-coordinator.md",
+        "projects/rollback-coordinator/WORKSTREAMS.md",
+        "projects/rollback-coordinator/docs/runbook.md"
+      ],
+      "branch": "feature/rollback-coordinator",
+      "status": "in-progress"
+    },
+    {
+      "name": "Flow-Mode Session",
+      "paths": [
+        "workspace/multi-agent-coding-session/SESSION_PLAN.md",
+        "workspace/multi-agent-coding-session/RUN_LOG.md"
+      ],
+      "status": "active"
+    }
+  ]
+}

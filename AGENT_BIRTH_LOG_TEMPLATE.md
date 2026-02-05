@@ -2,7 +2,7 @@
 
 Use this whenever a new agent comes online. Copy it into `memory/YYYY-MM-DD.md` (or `birth_logs/<agent>.md`) so the birth conversation and approvals are traceable.
 
-```
+```markdown
 ## Birth Record — <Agent Name>
 - **Date:** <YYYY-MM-DD>
 - **Session ID:** <if available>
