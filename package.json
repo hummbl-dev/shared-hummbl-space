@@ -1,0 +1,9 @@
+{
+  "name": "shared-hummbl-space",
+  "version": "0.1.0",
+  "scripts": {
+    "lint:agents": "./scripts/lint_agents.py",
+    "lint:avatars": "./scripts/check_avatars.py",
+    "ci": "npm run lint:agents && npm run lint:avatars"
+  }
+}

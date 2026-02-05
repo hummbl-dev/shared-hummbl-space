@@ -1,0 +1,31 @@
+name: HUMMBL Shared Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint_agents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run agent lint
+        run: ./scripts/lint_agents.py
+
+  check_avatars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run avatar validation
+        run: ./scripts/check_avatars.py
+
+  workspace_sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Link shared workspace locally
+        run: |
+          chmod +x scripts/link-shared-workspace.sh
+          mkdir -p /tmp/shared-test
+          ./scripts/link-shared-workspace.sh /tmp/shared-test
+          ls /tmp/shared-test
