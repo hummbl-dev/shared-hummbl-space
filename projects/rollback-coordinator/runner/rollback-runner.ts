@@ -1,6 +1,7 @@
-import { runCommand } from '../scripts/utils';
+import { verifyMigrations } from './migration-verifier';
 
 export async function executeRollback(planFile: string) {
   console.log(`Executing rollback plan ${planFile} (stub).`);
-  // TODO: parse plan, call governance, run scripts sequentially
+  await verifyMigrations('db');
+  console.log('Rollback complete (stub).');
 }
