@@ -1,24 +1,34 @@
 # Shared HUMMBL Space Remediation Plan (2026-02-05)
 
 ## Objective
-Track and remediate audit findings (F1–F11) while maintaining Flow governance (audit basic, separation none). All actions logged to `memory/2026-02-05.md` and the active session run log.
+Implement the remaining audit findings and registry improvements so every HUMMBL agent/workspace inherits a complete, governed toolkit.
 
 ## Workstreams
-| ID | Finding | Action | Owner | Target |
-|----|---------|--------|-------|--------|
-| R1 | F1/F2 Memory gaps | Maintain daily `memory/YYYY-MM-DD.md`; populate `MEMORY.md` with durable notes after each session. | Loom | Daily |
-| R2 | F3/F4 Approvals | Update `avatars/GALLERY.md` + `agents/*/IDENTITY.md` once Reuben approves agents; log activation. | Axis + Nexus | 2026-02-05 |
-| R3 | F5 Lint date | Update `scripts/lint_agents.py` to auto-detect the latest log (or accept `--date`). | Circuit | 2026-02-07 |
-| R4 | F6/F7 _state scripts | Add `_state/README.md` + `.gitkeep`; modify `hummbl-*` scripts to error if prerequisites missing. | Flux + Beacon | 2026-02-08 |
-| R5 | F8 Markdown lint | Add markdownlint/cspell checks to CI + local npm script. | Sentinel | 2026-02-09 |
-| R6 | F9/F10 Dependabot | Extend Dependabot to cover Python/npm tooling. | Guardian | 2026-02-09 |
-| R7 | F11 Divergence | Standardize `git pull --rebase origin main` before work; document procedure. | Chronos | Daily |
-| R8 | Rollback branch | Merge `feature/rollback-coordinator` after CI. | Harbor | Pending |
+| ID | Goal | Description | Owner | Target |
+|----|------|-------------|-------|--------|
+| R1 | Agent Registry | Create `registries/agents.json` describing name/emoji/role/home/status/artifact dirs. | Axis | 2026-02-06 |
+| R2 | Playbook Registry | Add `registries/playbooks.json` summarizing each team (members, file, log). | Nexus | 2026-02-06 |
+| R3 | Tooling Registry | Document scripts/CLIs (`registries/tools.json`) with description, prereqs, risk. | Circuit | 2026-02-07 |
+| R4 | Governance Registry | Map HUMMBL-GOVERNOR, EXECUTION_AUTHORITY_PROTOCOL, Flow/Balanced/Strict docs to owners/version. | Guardian | 2026-02-07 |
+| R5 | Workstream Registry | Track active initiatives (rollback coordinator) with design, branch, status. | Vector | 2026-02-08 |
+| R6 | Memory Registry | Reference `memory/` cadence + `MEMORY.md` guidelines; ensure durable facts flow. | Loom | 2026-02-06 |
+| R7 | CI Hardening | Verify markdown/cspell workflow runs on GitHub; add npm/pip security scans. | Sentinel | 2026-02-08 |
+| R8 | Dependabot Coverage | Confirm `.github/dependabot.yml` monitors npm/pip/Actions; document usage. | Guardian | 2026-02-08 |
+| R9 | Git Sync Procedure | Document `git pull --rebase origin main` workflow in README & RUN_LOG. | Chronos | 2026-02-06 |
+| R10 | Merge Rollback Branch | Ensure CI runs; merge `feature/rollback-coordinator` into main. | Harbor | Pending CI |
+| R11 | _state Safeguards | Already added README + guarded scripts; confirm `.gitkeep` or documented ignore policy. | Flux | DONE |
+| R12 | Agent Activation | Completed; keep GALLERY/IDENTITY updates in sync with approvals. | Axis | DONE |
 
-## Immediate Tasks
-1. Implement plan tracking (this file).
-2. Activate pending agents (update gallery + identities, log approval).
-3. Parameterize lint script (R3) and `_state` safeguards (R4) next.
-4. Expand CI and Dependabot per R5/R6.
+## Execution Cadence
+- Use Flow governance: log actions in `workspace/multi-agent-coding-session/RUN_LOG.md` and `memory/2026-02-05.md`.
+- Run `npm run ci` before every push.
+- Create registries under `registries/` directory (JSON/YAML + README).
+- After CI enhancements and registries land, merge rollback-coordinator branch, then update README to reflect new registries.
 
-Progress captured in `RUN_LOG.md` and future SITREPs.
+## Dependencies
+- R7 requires GitHub network access to observe workflow runs.
+- R10 depends on the same CI checks.
+
+## Reporting
+- Update PLAN.md status per task (TODO/IN PROGRESS/DONE).
+- Summaries go into next daily memory file + SITREP.
