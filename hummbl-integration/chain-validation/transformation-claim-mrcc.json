@@ -1,0 +1,169 @@
+{
+  "$schema": "https://hummbl.dev/schemas/claim-mrcc.v1.json",
+  "version": "1.0.0",
+  "description": "Maximum Capability Constraints for transformation chain claims. Governs what conclusions can be drawn from chain validation evidence.",
+
+  "claim_levels": {
+    "L1_OBSERVED": "Single observation, no pattern claim allowed",
+    "L2_SUGGESTED": "2+ observations, pattern suggested but not established",
+    "L3_SUPPORTED": "3+ observations across 2+ problems, pattern supported",
+    "L4_ESTABLISHED": "5+ observations across 3+ problems with peer review",
+    "L5_PROVEN": "Statistical significance + reproducibility + peer review"
+  },
+
+  "mrcc": {
+    "description": "Hard limits on claims based on evidence",
+
+    "evidence_thresholds": {
+      "min_runs_for_pattern": 3,
+      "min_problems_for_generalization": 2,
+      "min_chains_for_comparison": 2,
+      "min_reviewers_for_L4": 2
+    },
+
+    "required_documentation": {
+      "per_transformation": [
+        "input_context",
+        "transformation_applied",
+        "key_insights_generated",
+        "output_for_next_step"
+      ],
+      "per_chain": [
+        "problem_statement",
+        "transformation_sequence",
+        "final_synthesis",
+        "chain_id"
+      ],
+      "per_comparison": [
+        "both_chain_outputs",
+        "dimension_by_dimension_comparison",
+        "verdict_with_evidence"
+      ]
+    },
+
+    "forbidden_claims": [
+      {
+        "claim": "proven_from_single_run",
+        "reason": "Single observation cannot establish proof",
+        "minimum_for_claim": "L3_SUPPORTED with 3+ runs"
+      },
+      {
+        "claim": "universal_without_boundary_conditions",
+        "reason": "All claims must specify scope and limitations",
+        "required": "explicit_boundary_statement"
+      },
+      {
+        "claim": "causation_from_correlation",
+        "reason": "Observing difference doesn't prove ordering caused it",
+        "minimum_for_claim": "controlled_experiment_design"
+      },
+      {
+        "claim": "generalization_from_single_problem",
+        "reason": "One problem may have unique characteristics",
+        "minimum_for_claim": "2+ distinct problem domains"
+      }
+    ],
+
+    "max_claim_level_by_evidence": {
+      "1_run_1_problem": "L1_OBSERVED",
+      "2_runs_1_problem": "L2_SUGGESTED",
+      "3_runs_1_problem": "L2_SUGGESTED",
+      "2_runs_2_problems": "L2_SUGGESTED",
+      "3_runs_2_problems": "L3_SUPPORTED",
+      "5_runs_3_problems": "L4_ESTABLISHED",
+      "5_runs_3_problems_peer_reviewed": "L5_PROVEN"
+    },
+
+    "monotonic_properties": [
+      "refuted_stays_refuted",
+      "evidence_cannot_regress",
+      "claim_level_requires_cumulative_evidence"
+    ]
+  },
+
+  "ncc": {
+    "description": "Nominal constraints - preferred operating zone for claims",
+
+    "preferred_claim_language": {
+      "L1": ["observed", "noted", "recorded"],
+      "L2": ["suggests", "indicates", "appears to"],
+      "L3": ["supports", "provides evidence for", "consistent with"],
+      "L4": ["establishes", "demonstrates", "confirms"],
+      "L5": ["proves", "definitively shows"]
+    },
+
+    "discouraged_language": [
+      "proves (below L5)",
+      "definitely (below L4)",
+      "always/never (without boundary conditions)",
+      "obviously (subjective)"
+    ],
+
+    "recommended_caveats": [
+      "within the tested problem domain",
+      "under these specific conditions",
+      "pending additional validation",
+      "subject to peer review"
+    ]
+  },
+
+  "current_validation_audit": {
+    "chain_validation_feb_6_2026_initial": {
+      "evidence": {
+        "runs": 2,
+        "problems": 1,
+        "chains_compared": 2,
+        "peer_reviewers": 0
+      },
+      "max_allowed_claim_level": "L1_OBSERVED",
+      "actual_claim_made": "NON-COMMUTATIVITY PROVEN",
+      "violation": {
+        "type": "CLAIM_EXCEEDS_EVIDENCE",
+        "severity": "MEDIUM",
+        "current_claim": "proven",
+        "max_supported_claim": "observed"
+      },
+      "status": "REMEDIATED"
+    },
+    "chain_validation_feb_6_2026_expanded": {
+      "evidence": {
+        "runs": 6,
+        "problems": 3,
+        "chains_compared": 2,
+        "peer_reviewers": 0,
+        "problem_domains": [
+          "AI tool/model selection",
+          "Distributed systems failure handling",
+          "Technical documentation structure"
+        ]
+      },
+      "max_allowed_claim_level": "L3_SUPPORTED",
+      "actual_claim_made": "NON-COMMUTATIVITY SUPPORTED",
+      "violation": null,
+      "corrected_claim": "Non-commutativity SUPPORTED by consistent evidence across 3 distinct problem domains. P1-first chains produce prescriptive/architectural outputs; SY4-first chains produce diagnostic/remediation outputs.",
+      "path_to_L4": "Add 2+ peer reviewers to reach L4_ESTABLISHED",
+      "status": "COMPLIANT"
+    }
+  },
+
+  "validation_checklist": {
+    "before_claiming_L2_SUGGESTED": [
+      "[ ] 2+ runs completed",
+      "[ ] All required documentation present",
+      "[ ] No forbidden claims made",
+      "[ ] Boundary conditions stated"
+    ],
+    "before_claiming_L3_SUPPORTED": [
+      "[ ] 3+ runs completed",
+      "[ ] 2+ distinct problems tested",
+      "[ ] Dimension-by-dimension comparison documented",
+      "[ ] Alternative explanations considered"
+    ],
+    "before_claiming_L4_ESTABLISHED": [
+      "[ ] 5+ runs completed",
+      "[ ] 3+ distinct problems tested",
+      "[ ] 2+ peer reviewers signed off",
+      "[ ] Reproducibility instructions provided"
+    ]
+  }
+}
