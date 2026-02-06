@@ -8,7 +8,7 @@ jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Install markdownlint
         run: npm install -g markdownlint-cli
       - name: Run markdownlint
@@ -16,7 +16,7 @@ jobs:
   cspell:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Install cspell
         run: npm install -g cspell
       - name: Run cspell
