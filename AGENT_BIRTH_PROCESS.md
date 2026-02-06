@@ -21,8 +21,9 @@ Use this checklist whenever we spin up a fresh agent in this workspace or any HU
    - Keep this process doc + template so the next agent can repeat the ritual.
 
 5. **Log the birth**
-   - Create `memory/YYYY-MM-DD.md` for the birth session with the highlights (name, vibe, emoji, approvals).
-   - Update `AGENT.md` or equivalent operating manual with any workspace-specific expectations for the new agent.
+ - Create `memory/YYYY-MM-DD.md` for the birth session with the highlights (name, vibe, emoji, approvals).
+  - Update `AGENT.md` or equivalent operating manual with any workspace-specific expectations for the new agent.
+  - Add the new avatar entry to `avatars/GALLERY.md` immediately after generating color + mono assets (note approval status).
    - Optionally copy `AGENT_BIRTH_LOG_TEMPLATE.md` into the memory file so the conversational notes follow a consistent format.
 
 6. **Ongoing refinement**
@@ -44,7 +45,8 @@ Before logging "approved" in the gallery, walk through these five checks (note r
 5. **Approval metadata** — date + approving human added to `avatars/GALLERY.md` and `IDENTITY.md`.
 
 ### Script Usage
-```
+
+```bash
 scripts/generate-avatar.sh --output avatars/<name>-avatar.png --mode color
 scripts/generate-avatar.sh --output avatars/<name>-avatar-mono.png --mode mono
 ```
@@ -53,7 +55,7 @@ scripts/generate-avatar.sh --output avatars/<name>-avatar-mono.png --mode mono
 
 > **Rule:** Each new agent must pick their own emoji + avatar concepts during the birth conversation and secure human approval before finalizing those files.
 
-**Current agents spun up via this ritual:** Codex (root), Scout, Pulse, Echo, Thesis, Antithesis, Synthesis, Redline, Bluewall, Purplebridge, Atlas, Forge, Vigil, Quorum, Flux, Prism, Vector, Circuit, Sentinel, Chronos, Nexus, Halo, Quill, Matrix, Guardian, Tempo, Relay, Loom, Beacon, Glyph, Kernel, Orbit, Ember, Harbor, Whisper, Vault. Keep the roster updated in `avatars/GALLERY.md` + `memory/` whenever new siblings join.
+**Current agents spun up via this ritual:** Codex (root), Scout, Pulse, Echo, Thesis, Antithesis, Synthesis, Redline, Bluewall, Purplebridge, Atlas, Forge, Vigil, Quorum, Flux, Prism, Vector, Circuit, Sentinel, Chronos, Nexus, Halo, Quill, Matrix, Guardian, Tempo, Relay, Loom, Beacon, Glyph, Kernel, Orbit, Ember, Harbor, Whisper, Vault, RPBx, Kimi. Keep the roster updated in `avatars/GALLERY.md` + `memory/` whenever new siblings join.
 
 ### Regenerating Avatars After Palette Shifts
 1. Confirm new brand palette or accent colors with Reuben.

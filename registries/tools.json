@@ -1,0 +1,13 @@
+{
+  "generated": "2026-02-05",
+  "tools": [
+    {"name": "lint_agents", "path": "scripts/lint_agents.py", "description": "Validates agent directories, birth logs, and referenced artifact folders.", "risk": "low"},
+    {"name": "check_avatars", "path": "scripts/check_avatars.py", "description": "Ensures all avatar PNGs exist with valid headers per gallery.", "risk": "low"},
+    {"name": "link-shared-workspace", "path": "scripts/link-shared-workspace.sh", "description": "Symlinks shared identity stack into target workspace.", "risk": "medium"},
+    {"name": "generate-avatar", "path": "scripts/generate-avatar.sh", "description": "CLI wrapper over dependency-free avatar generator.", "risk": "low"},
+    {"name": "hummbl-inventory", "path": "scripts/hummbl-inventory.sh", "description": "Placeholder inventory script; guarded to require HUMMBL_REMOTE before running.", "risk": "medium"},
+    {"name": "hummbl-sync", "path": "scripts/hummbl-sync.sh", "description": "Placeholder sync script requiring HUMMBL_SYNC_TARGET env var.", "risk": "medium"},
+    {"name": "generate_agent_registry", "path": "scripts/generate_agent_registry.py", "description": "Parses IDENTITY.md files and produces registries/agents.json.", "risk": "low"}
+    ,{"name": "agent_lookup", "path": "scripts/agent_lookup.py", "description": "Reads registries/agents.json and prints agent/team details by callsign.", "risk": "low"}
+  ]
+}

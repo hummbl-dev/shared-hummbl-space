@@ -14,7 +14,7 @@ Shared collaborative space for experimental HUMMBL development and prototyping.
 - Canonical defines truth; operational executes; experimental explores; forks track upstream.
 - No copying canonical artifacts into non-canonical repos. Reference/import only.
 
-## Purpose
+## Experimental Scope
 - Experimental classification allows rapid iteration
 - No production dependencies should reference this repo
 - Breaking changes permitted without notice

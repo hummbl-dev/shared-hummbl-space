@@ -14,7 +14,8 @@ Build a governance-aware rollback orchestrator that can rewind multi-service dep
 | SY (Systems) | Integration with shared workspace, governance logging, GitHub repo.
 
 ## Architecture Overview
-```
+
+```text
 ┌────────────┐     ┌────────────────┐     ┌─────────────────┐
 │ Git Watcher├────▶│ Dependency Map │────▶│ Rollback Planner │
 └────────────┘     └────────────────┘     └─────────────────┘

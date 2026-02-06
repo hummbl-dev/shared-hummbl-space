@@ -1,0 +1,3 @@
+shared-hummbl-space/ is a nested git repository.
+Remote: https://github.com/hummbl-dev/shared-hummbl-space.git
+Contents: agents/, avatars/, memory/, scripts/, etc.

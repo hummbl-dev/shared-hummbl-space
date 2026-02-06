@@ -1,0 +1,41 @@
+{
+  "generated": "2026-02-05",
+  "playbooks": [
+    {
+      "name": "Dialectic Trio",
+      "file": "agents/dialectic/PLAYBOOK.md",
+      "members": ["Thesis", "Antithesis", "Synthesis"],
+      "summary": "Structured thesis → antithesis → synthesis debates for governance decisions."
+    },
+    {
+      "name": "Red/Blue/Purple",
+      "file": "agents/red-blue-purple/PLAYBOOK.md",
+      "members": ["Redline", "Bluewall", "Purplebridge"],
+      "summary": "Offensive, defensive, and coordination pattern for security reviews."
+    },
+    {
+      "name": "Pentad",
+      "file": "agents/pentad/PLAYBOOK.md",
+      "members": ["Atlas", "Forge", "Vigil", "Quorum", "Flux"],
+      "summary": "Strategy → build → observability → analytics → automation workflow."
+    },
+    {
+      "name": "HexaOps",
+      "file": "agents/hexaops/PLAYBOOK.md",
+      "members": ["Prism", "Vector", "Circuit", "Sentinel", "Chronos", "Nexus"],
+      "summary": "Research → plan → build → QA → scheduling → communications."
+    },
+    {
+      "name": "Septet",
+      "file": "agents/septet/PLAYBOOK.md",
+      "members": ["Halo", "Quill", "Matrix", "Guardian", "Tempo", "Relay", "Loom"],
+      "summary": "Vision, documentation, data, security, cadence, comms, memory collaboration."
+    },
+    {
+      "name": "Octave",
+      "file": "agents/octave/PLAYBOOK.md",
+      "members": ["Beacon", "Glyph", "Kernel", "Orbit", "Ember", "Harbor", "Whisper", "Vault"],
+      "summary": "Risk, experience, core systems, integrations, performance, release, liaison, archives."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "../schemas/cost-control.schema.json",
+  "budget_tiers": {
+    "routine": {
+      "limit": 5.00,
+      "warn_at": 3.75,
+      "auto_approve": true,
+      "description": "Quick tasks, simple queries"
+    },
+    "analysis": {
+      "limit": 25.00,
+      "warn_at": 15.00,
+      "auto_approve": false,
+      "description": "Code review, debugging, research"
+    },
+    "research": {
+      "limit": 50.00,
+      "warn_at": 30.00,
+      "auto_approve": false,
+      "description": "Deep dives, multi-file analysis"
+    },
+    "architecture": {
+      "limit": 100.00,
+      "warn_at": 60.00,
+      "auto_approve": false,
+      "description": "System design, major refactors"
+    }
+  },
+  "warning_thresholds": [
+    {
+      "percent": 25,
+      "level": "info",
+      "message": "Budget check - ${current} of ${limit} used (25%)"
+    },
+    {
+      "percent": 50,
+      "level": "info",
+      "message": "Halfway through budget - ${current} of ${limit}"
+    },
+    {
+      "percent": 75,
+      "level": "warn",
+      "message": "75% budget used (${current}/${limit}), continue?"
+    },
+    {
+      "percent": 90,
+      "level": "halt",
+      "message": "HALT - Budget limit approaching (${current}/${limit})"
+    }
+  ],
+  "emergency_override": {
+    "conditions": [
+      "production_down",
+      "security_incident",
+      "user_explicit_approval"
+    ],
+    "command": "emergency_override:approve"
+  },
+  "session_tracking_path": "../hummbl-integration/session-tracking.json"
+}

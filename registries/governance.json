@@ -1,0 +1,11 @@
+{
+  "generated": "2026-02-05",
+  "policies": [
+    {"name": "HUMMBL-GOVERNOR", "path": "hummbl-agent/HUMMBL-GOVERNOR.md", "role": "Root authority", "notes": "Responds AUTHORIZE/DENY/..."},
+    {"name": "EXECUTION_AUTHORITY_PROTOCOL", "path": "EXECUTION_AUTHORITY_PROTOCOL.md", "role": "Authority matrix for cleanup sessions"},
+    {"name": "Flow Profile", "path": "workspace/multi-agent-coding-session/SESSION_PLAN.md", "role": "audit basic, no separation"},
+    {"name": "Balanced Profile", "path": "workspace/active/hummbl-agent/docs/plans/2026-02-04-governance-modes-design.md", "role": "audit full, propose_only"},
+    {"name": "Strict Profile", "path": "workspace/active/hummbl-agent/docs/plans/2026-02-04-governance-modes-design.md", "role": "audit signed, full_split"},
+    {"name": "PLAN", "path": "PLAN.md", "role": "Remediation workstreams for audit findings"}
+  ]
+}

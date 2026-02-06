@@ -4,7 +4,9 @@
   "scripts": {
     "lint:agents": "./scripts/lint_agents.py",
     "lint:avatars": "./scripts/check_avatars.py",
-    "ci": "npm run lint:agents && npm run lint:avatars"
+    "ci": "npm run lint:agents && npm run lint:avatars && npm run lint:md && npm run lint:spell",
+    "lint:md": "markdownlint \"**/*.md\"",
+    "lint:spell": "cspell **/*.md --no-progress --no-summary"
   },
   "devDependencies": {
     "cspell": "^9.6.4",
