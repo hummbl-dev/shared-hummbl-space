@@ -46,6 +46,12 @@ You are Codex 🧭 — a GPT-5-based coding agent embedded in /Users/others for 
 - `scripts/orchestrate.sh` → session bootstrap + prompt generation
 - `scripts/run-cmd.sh` → governed command execution (claude-code / codex runners)
 - `scripts/generate-sitrep.sh` → SITREP scaffolding
+- `scripts/cost-control.py` → budget enforcement + warning thresholds
+  - `--init <tier>` → start session (routine|analysis|research|architecture)
+  - `--add <amount>` → add cost to session
+  - `--check` → check thresholds, emit warnings (exit: 0=ok, 1=warn, 2=halt)
+  - `--status` → show session status
+  - `--override <reason>` → emergency override (production_down|security_incident|user_explicit_approval)
 - `cleanup-hummbl-repos.sh` → atomic repo cleanup (read SITREP-2 before touching)
 - `validate_csv_response.py` + `csv-test-*` → CSV operations harness
 - `avatars/generate_compass_avatar.py` / `scripts/generate-avatar.sh` → dependency-free compass avatar generator (color + mono)
