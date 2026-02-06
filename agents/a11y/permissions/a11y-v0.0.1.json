@@ -1,0 +1,15 @@
+{
+  "agent": "a11y",
+  "version": "0.0.1",
+  "schema_version": "0.0.1",
+  "autonomy_level": "supervised",
+  "capabilities": {
+    "audit_codebase": { "scope": "all", "gated": false },
+    "identify_violations": { "scope": "all", "gated": false },
+    "recommend_fixes": { "scope": "all", "gated": false },
+    "auto_fix_dev": { "scope": "dev", "gated": true, "approval_from": ["warden"], "gate_type": "threshold_gate" },
+    "fix_staging": { "scope": "staging", "gated": true, "approval_from": ["reuben"] },
+    "fix_production": { "scope": "none", "gated": true, "approval_from": ["reuben", "rpbx"] }
+  },
+  "metadata": { "created_at": "2026-02-06T03:00:00Z", "approval_chain": ["reuben"] }
+}
