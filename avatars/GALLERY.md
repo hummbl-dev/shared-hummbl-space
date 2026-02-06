@@ -55,10 +55,10 @@
 | Red-Blue-Purple Team | 🧩 | N/A (member avatars) | N/A (member avatars) | ♻ Shared (uses member avatars) | Uses Redline/Bluewall/Purplebridge avatars; see `agents/red-blue-purple/IDENTITY.md` |
 | Septet Team | 🧩 | N/A (member avatars) | N/A (member avatars) | ♻ Shared (uses member avatars) | Uses Halo/Quill/Matrix/Guardian/Tempo/Relay/Loom avatars; see `agents/septet/IDENTITY.md` |
 | Kimi | 🔧 | `avatars/kimi-avatar.png` | `avatars/kimi-avatar-mono.png` | ✅ Approved (Reuben, 2026-02-05) | Execution engine wrench badge; steel/orange palette; generated via `generate_compass_avatar.py` |
-| Warden | 🔐 | `avatars/warden-avatar.png` | `avatars/warden-avatar-mono.png` | ⏳ Pending Approval | Control-plane governor shield-lock badge; navy/crimson palette; see `avatars/warden-avatar-brief.md` |
-| Ledger | 💰 | `avatars/ledger-avatar.png` | `avatars/ledger-avatar-mono.png` | ⏳ Pending Approval | FinOps guardian gold-scale badge; forest/gold palette; see `avatars/ledger-avatar-brief.md` |
-| Triage | 🚑 | `avatars/triage-avatar.png` | `avatars/triage-avatar-mono.png` | ⏳ Pending Approval | Incident commander medical-cross badge; red/white/gold palette; see `avatars/triage-avatar-brief.md` |
-| A11y | ♿ | `avatars/a11y-avatar.png` | `avatars/a11y-avatar-mono.png` | ⏳ Pending Approval | Accessibility guardian universal-access badge; purple/cyan palette; see `avatars/a11y-avatar-brief.md` |
+| Warden | 🔐 | `avatars/warden-avatar.png` | `avatars/warden-avatar-mono.png` | ✅ Approved (Reuben, 2026-02-06) | Control-plane governor shield-lock badge; navy/crimson palette; see `avatars/warden-avatar-brief.md` |
+| Ledger | 💰 | `avatars/ledger-avatar.png` | `avatars/ledger-avatar-mono.png` | ✅ Approved (Reuben, 2026-02-06) | FinOps guardian gold-scale badge; forest/gold palette; see `avatars/ledger-avatar-brief.md` |
+| Triage | 🚑 | `avatars/triage-avatar.png` | `avatars/triage-avatar-mono.png` | ✅ Approved (Reuben, 2026-02-06) | Incident commander medical-cross badge; red/white/gold palette; see `avatars/triage-avatar-brief.md` |
+| A11y | ♿ | `avatars/a11y-avatar.png` | `avatars/a11y-avatar-mono.png` | ✅ Approved (Reuben, 2026-02-06) | Accessibility guardian universal-access badge; purple/cyan palette; see `avatars/a11y-avatar-brief.md` |
 
 **How to add an entry:**
 1. Generate color/mono PNGs via `avatars/generate_compass_avatar.py` (or other tooling).
